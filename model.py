@@ -74,8 +74,12 @@ def relu_activation(x):
     
     return jnp.maximum(x, 0)
 
-# Step 11 - softmax_probabilities (not yet solved)
-# TODO: implement
+# Step 11 - softmax_probabilities
+def softmax_probabilities(logits):
+    # Numerically stable softmax along the last axis
+    shifted_logits = logits - jnp.max(logits, axis=-1, keepdims=True)
+    exp_logits = jnp.exp(shifted_logits)
+    return exp_logits / jnp.sum(exp_logits, axis=-1, keepdims=True)
 
 # Step 12 - mlp_forward (not yet solved)
 # TODO: implement
