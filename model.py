@@ -14,8 +14,10 @@ def make_prng_key(seed):
     # Wrap a Python integer seed into a JAX PRNG key
     return jax.random.PRNGKey(seed)
 
-# Step 2 - split_prng_key (not yet solved)
-# TODO: implement
+# Step 2 - split_prng_key
+def split_prng_key(key, num):
+    # Split key into `num` independent subkeys
+    return jax.random.split(key, num)
 
 # Step 3 - sample_normal_matrix (not yet solved)
 # TODO: implement

@@ -11,7 +11,7 @@ python scaffold.py
 ## Steps
 
 - [x] **1.** make_prng_key
-- [ ] **2.** split_prng_key
+- [x] **2.** split_prng_key
 - [ ] **3.** sample_normal_matrix
 - [ ] **4.** sample_input_features
 - [ ] **5.** assign_class_labels
