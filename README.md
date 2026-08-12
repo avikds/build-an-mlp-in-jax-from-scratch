@@ -14,7 +14,7 @@ python scaffold.py
 - [x] **2.** split_prng_key
 - [x] **3.** sample_normal_matrix
 - [x] **4.** sample_input_features
-- [ ] **5.** assign_class_labels
+- [x] **5.** assign_class_labels
 - [ ] **6.** one_hot_encode_labels
 - [ ] **7.** init_linear_layer
 - [ ] **8.** init_mlp_params
