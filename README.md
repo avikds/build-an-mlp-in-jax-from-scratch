@@ -21,7 +21,7 @@ python scaffold.py
 - [x] **9.** linear_forward
 - [x] **10.** relu_activation
 - [x] **11.** softmax_probabilities
-- [ ] **12.** mlp_forward
+- [x] **12.** mlp_forward
 - [ ] **13.** log_softmax_logits
 - [ ] **14.** cross_entropy_loss
 - [ ] **15.** classification_accuracy
