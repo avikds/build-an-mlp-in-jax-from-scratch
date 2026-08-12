@@ -23,7 +23,7 @@ python scaffold.py
 - [x] **11.** softmax_probabilities
 - [x] **12.** mlp_forward
 - [x] **13.** log_softmax_logits
-- [ ] **14.** cross_entropy_loss
+- [x] **14.** cross_entropy_loss
 - [ ] **15.** classification_accuracy
 - [ ] **16.** loss_fn_of_params
 - [ ] **17.** compute_param_grads
