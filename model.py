@@ -168,6 +168,11 @@ def train_mlp(params, x, one_hot_targets, learning_rate, num_epochs):
 
     return params
 
-# Step 21 - predict_classes (not yet solved)
-# TODO: implement
+# Step 21 - predict_classes
+def predict_classes(params, x):
+    # Run the MLP to obtain class logits
+    logits = mlp_forward(params, x)
+
+    # Select the highest-scoring class for each input
+    return jnp.argmax(logits, axis=-1).astype(jnp.int32)
 

@@ -30,7 +30,7 @@ python scaffold.py
 - [x] **18.** sgd_update_params
 - [x] **19.** training_step
 - [x] **20.** train_mlp
-- [ ] **21.** predict_classes
+- [x] **21.** predict_classes
 
 ---
 
