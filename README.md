@@ -17,7 +17,7 @@ python scaffold.py
 - [x] **5.** assign_class_labels
 - [x] **6.** one_hot_encode_labels
 - [x] **7.** init_linear_layer
-- [ ] **8.** init_mlp_params
+- [x] **8.** init_mlp_params
 - [ ] **9.** linear_forward
 - [ ] **10.** relu_activation
 - [ ] **11.** softmax_probabilities
