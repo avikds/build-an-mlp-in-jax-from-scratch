@@ -29,7 +29,7 @@ python scaffold.py
 - [x] **17.** compute_param_grads
 - [x] **18.** sgd_update_params
 - [x] **19.** training_step
-- [ ] **20.** train_mlp
+- [x] **20.** train_mlp
 - [ ] **21.** predict_classes
 
 ---
