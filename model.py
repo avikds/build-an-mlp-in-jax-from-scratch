@@ -109,8 +109,12 @@ def cross_entropy_loss(logits, one_hot_targets):
     loss_per_example = -jnp.sum(one_hot_targets * log_probs, axis=-1)
     return jnp.mean(loss_per_example)
 
-# Step 15 - classification_accuracy (not yet solved)
-# TODO: implement
+# Step 15 - classification_accuracy
+def classification_accuracy(logits, labels):
+    """Fraction of rows where argmax(logits) equals the integer label."""
+    
+    predictions = jnp.argmax(logits, axis=-1)
+    return jnp.mean(predictions == labels)
 
 # Step 16 - loss_fn_of_params (not yet solved)
 # TODO: implement
