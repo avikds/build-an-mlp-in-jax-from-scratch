@@ -91,8 +91,14 @@ def mlp_forward(params, x):
     # Apply the final linear layer without an activation
     return linear_forward(x, params[-1])
 
-# Step 13 - log_softmax_logits (not yet solved)
-# TODO: implement
+# Step 13 - log_softmax_logits
+def log_softmax_logits(logits):
+    # Numerically stable log-softmax along the last axis
+    max_logits = jnp.max(logits, axis=-1, keepdims=True)
+    shifted_logits = logits - max_logits
+    log_sum_exp = jnp.log(jnp.sum(jnp.exp(shifted_logits), axis=-1, keepdims=True))
+    
+    return shifted_logits - log_sum_exp
 
 # Step 14 - cross_entropy_loss (not yet solved)
 # TODO: implement
