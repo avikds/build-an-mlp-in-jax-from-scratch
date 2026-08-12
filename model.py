@@ -141,8 +141,18 @@ def sgd_update_params(params, grads, learning_rate):
         for layer, grad in zip(params, grads)
     ]
 
-# Step 19 - training_step (not yet solved)
-# TODO: implement
+# Step 19 - training_step
+def training_step(params, x, one_hot_targets, learning_rate):
+    # Compute loss at the current (old) parameters
+    loss = loss_fn_of_params(params, x, one_hot_targets)
+
+    # Compute gradients with respect to the current parameters
+    grads = compute_param_grads(params, x, one_hot_targets)
+
+    # Apply one SGD update
+    new_params = sgd_update_params(params, grads, learning_rate)
+
+    return new_params, loss
 
 # Step 20 - train_mlp (not yet solved)
 # TODO: implement

@@ -28,7 +28,7 @@ python scaffold.py
 - [x] **16.** loss_fn_of_params
 - [x] **17.** compute_param_grads
 - [x] **18.** sgd_update_params
-- [ ] **19.** training_step
+- [x] **19.** training_step
 - [ ] **20.** train_mlp
 - [ ] **21.** predict_classes
 
