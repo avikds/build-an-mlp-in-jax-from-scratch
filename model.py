@@ -68,8 +68,11 @@ def linear_forward(x, layer_params):
     # Compute the affine transformation x @ W + b
     return x @ layer_params["W"] + layer_params["b"]
 
-# Step 10 - relu_activation (not yet solved)
-# TODO: implement
+# Step 10 - relu_activation
+def relu_activation(x):
+    """Apply the ReLU activation elementwise to a JAX array."""
+    
+    return jnp.maximum(x, 0)
 
 # Step 11 - softmax_probabilities (not yet solved)
 # TODO: implement
