@@ -124,8 +124,11 @@ def loss_fn_of_params(params, x, one_hot_targets):
     # Return the scalar cross-entropy loss
     return cross_entropy_loss(logits, one_hot_targets)
 
-# Step 17 - compute_param_grads (not yet solved)
-# TODO: implement
+# Step 17 - compute_param_grads
+def compute_param_grads(params, x, one_hot_targets):
+    # Differentiate the loss with respect to the first argument (params)
+    grad_fn = jax.grad(loss_fn_of_params)
+    return grad_fn(params, x, one_hot_targets)
 
 # Step 18 - sgd_update_params (not yet solved)
 # TODO: implement
