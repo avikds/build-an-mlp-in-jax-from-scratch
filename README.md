@@ -32,6 +32,18 @@ python scaffold.py
 - [x] **20.** train_mlp
 - [x] **21.** predict_classes
 
----
+## Results
 
-Built on Deep-ML.
+```
+Input shape: (32, 8)
+Labels[:8]: [0, 0, 2, 3, 1, 0, 3, 0]
+One-hot[0]: [1.0, 0.0, 0.0, 0.0]
+Num layers: 3
+Layer shapes: [((), ()), ((), ()), ((), ())]
+Initial loss:     1.3831
+Initial accuracy: 0.3125
+Final loss:       0.1521
+Final accuracy:   1.0000
+Preds[:8]:  [0, 0, 2, 3, 1, 0, 3, 0]
+Labels[:8]: [0, 0, 2, 3, 1, 0, 3, 0]
+```
